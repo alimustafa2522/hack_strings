@@ -1,6 +1,9 @@
 #include<stdio.h>
 #include<string.h>
-char * replaceCharCopy(const char *s, char oldChar, char newChar);
+
+
+#include "string_utlis.h"
+
 
 
 
@@ -23,13 +26,33 @@ int main()
 
 
     replaceChar( string,old_Char,new_Char);
-    replaceCharCopy(string,old_Char,new_Char);
+    
 
     printf("modified string : %s",string);
 
+    replaceCharCopy(string,old_Char,new_Char);
+
     printf("original string : %s",string);
     printf("modified string : %s",replaceCharCopy(string,old_Char,new_Char));
-    
+
+
+    char c;
+    printf("Enter character you want to remove : ");
+    scanf("%c",&c);
+
+    removechar(string,c);
+
+    printf("modified string : %s",string);
+
+
+
+
+
+
+
+
+
+
 
     return 0;
 }

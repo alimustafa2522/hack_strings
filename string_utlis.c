@@ -1,6 +1,7 @@
 #include<stdio.h>
 char replaceChar(char *string, char old_Char, char new_Char)
 
+
 {
     while(*string!='\0')
     {
@@ -36,7 +37,42 @@ while(*string!='\0'){
 
 return dyn_str_cpy;
 
+void removechar(char *stirng,char c)
+{
+    
+
+char *ptr=string;
+
+char *p;
+
+while(*string!='\0'){
+
+if(*string==c){
+
+*string=*(string+1);
+p=string+1;
+
+while( *p != '\0'){
+
+*p = *(p+1);
+p++;
+
 }
+
+}
+
+s++;
+}
+
+printf("\nAfter removing %c we get : ",c);
+
+
+}
+
+
+
+
+
 
 
 

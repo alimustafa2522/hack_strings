@@ -22,9 +22,14 @@ int main()
     scanf("%c",&new_Char);
 
 
-    replaceCharCopy( string,old_Char,new_Char);
+    replaceChar( string,old_Char,new_Char);
+    replaceCharCopy(string,old_Char,new_Char);
 
     printf("modified string : %s",string);
+
+    printf("original string : %s",string);
+    printf("modified string : %s",replaceCharCopy(string,old_Char,new_Char));
+    
 
     return 0;
 }

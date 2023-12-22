@@ -70,6 +70,41 @@ printf("\nAfter removing %c we get : ",c);
 }
 
 
+char * removeCharCopy( char *string, char c){
+
+
+char *ptr=string;
+
+char *p;
+
+while(*s!='\0'){
+
+if(*s==c){
+
+*s=*(s+1);
+p=s+1;
+
+while( *p != '\0'){
+
+*p = *(p+1);
+p++;
+
+}
+
+}
+
+s++;
+}
+
+char *dynamic_str = (char * ) malloc(strlen(ptr) + 1);
+
+strcpy(dynamic_str,ptr);
+
+return dynamic_str;
+
+}
+
+
 
 
 

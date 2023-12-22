@@ -1,11 +1,9 @@
-#include<stdio.h>
-void replaceChar(char *string, char old_Char, char new_Char);
-char replaceCharCopy(char *string,char old_Char,char new_Char);
-void removechar(char *string,char c);
-char * removeCharCopy( char *string, char c)
 
-
-
+/* Q:1 */ void replaceChar(char *s, char oldChar, char newChar);
+/* Q:2 */ char *replaceCharCopy(char *s, char oldChar, char newChar);
+/* Q:3 */ void removeChar(char *s, char c);
+/* Q:4 */char * removeCharCopy( char *s, char c);
+/* Q:5 */char **lengthSplit(const char *s, int n);
 
 
 

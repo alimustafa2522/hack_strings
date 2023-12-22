@@ -17,10 +17,10 @@ if (choice==1){
 
 printf("\nTest Case 1\n");
 
-char str[8]="_LI";
+char string[8]="_LI";
 
-char oldChar='_';
-char newChar='A';
+char old_Char='_';
+char new_Char='A';
 
 replaceChar(str , oldChar, newChar);
 
